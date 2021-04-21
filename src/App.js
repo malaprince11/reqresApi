@@ -1,8 +1,11 @@
+import { hot } from 'react-hot-loader/root';
+import React from 'React';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavBar from './Component/Navbar/Navbar';
 import AddData from './Container/AddData/AddData';
 import Home from './Container/Home/Home';
+
 
 function App() {
   return (
@@ -19,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(App);
